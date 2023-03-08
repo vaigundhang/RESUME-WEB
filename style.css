@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+hr{
+    width: 50%;
+}
+.hr{
+    width: 100%;
+}
+
+.print-area{
+   width: 80%;
+   margin: 20px auto;
+}
+.print-area .header{
+    width: 100%;
+    height:100px;
+    background-color: rgb(82, 171, 95);
+    display: flex;
+    align-items: left;
+    position: relative;
+}
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgba(103, 41, 19, 0.5);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+    
+}
+.header img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px rgba(0,0,0,.5);
+}
+.header-text h1{
+    font-size: 30px;
+    font-weight: normal;
+    padding-left: 350px;
+    color: rgb(8, 8, 8);
+    margin-top: 30px;
+}
+.header-text p{
+    font-size: 20px;
+    color: rgb(8, 8, 8);
+    padding-left: 340px;
+    
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-area{
+    width: 30%;
+    background-color: rgb(199, 245, 206);
+    text-align: center; 
+}
+.left-area .contact{
+    margin-top: 130px;
+    padding: 0 30px;
+    
+}
+.contact h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 20px 0;
+    margin-left: -120px;
+}
+.contact h5{
+    font-size: 15px;
+    margin: 10px 0;
+    padding-left: 5px;
+}
+.contact p{
+    font-size: 17px;
+}
+.skills{
+    margin-top: 30px;
+}
+.skills h1{
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: -120px;
+}
+.bars{
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px 10px;
+    margin-left: 20px;
+}
+.bars .bar p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 29px;
+    display: block;
+}
+.bar span{
+   
+    width: 100%;
+    height: 10px;
+    background-color: rgb(192,191,191);
+    margin-top: 10px;
+}
+.bar span::before{
+    position: absolute;
+   
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+.right-area{
+    width: 70%;
+    padding: 50px;
+}
+.right-area h1{
+    font-size: 20px;
+    font-weight: normal;
+}
+.right-area h1 span{
+    margin-right: 30px;
+    font-size: 20px;
+    color: rgb(24, 126, 36);
+
+}
+.title1 {
+    font-size: 18px;
+}
+
+.right-area p{
+    padding-left: 70px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    color: rgb(10, 9, 9);
+    margin-top: 10px;
+}
+
+.work .work-group{
+    position: relative;
+}
+.work-group h3{
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 70px;
+}
+.work-group h4{
+    font-size: 18px;
+    padding-left: 70px;
+    font-weight: normal;
+    color: gray;
+}
+.work-group span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+.education{
+    margin-top: 30px;
+
+}
+.edu-group{
+    position: relative;
+}
+.edu-group h4{
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: normal;
+
+}
+.edu-group span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.edu-group p{
+    padding-left: 80px;
+}
+button{
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 50px 0 50px 130px;
+    background-color: rgb(24, 126, 36);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    background-color: black;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+}
+@media print {
+    body*{
+        visibility: hidden;
+    }
+    .print-area *{
+        visibility: visible;
+
+    }
+}
+
+
+
